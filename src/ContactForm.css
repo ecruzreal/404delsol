@@ -1,0 +1,30 @@
+.formContainer{
+    background-color: rgb(150, 150, 150);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+label {
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+

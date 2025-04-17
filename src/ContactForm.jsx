@@ -1,4 +1,5 @@
 import {useState} from "react";
+import './ContactForm.css'
 
 function ContactForm() {
 
@@ -31,7 +32,7 @@ function ContactForm() {
     };
 
     return (
-        <div className="formContaier">
+        <div className="formContainer" id="form-container">
             <h2>Interested in performing? Send us a message!</h2>
             <form id="contact-form" method="POST" onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
                 <div className="form-group">
