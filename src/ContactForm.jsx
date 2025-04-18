@@ -1,5 +1,6 @@
 import {useState} from "react";
 import './ContactForm.css'
+import axios from 'axios';
 
 function ContactForm() {
 
@@ -12,13 +13,17 @@ function ContactForm() {
     const [formStatus, setFormStatus] = useState("");
 
     const handleChange = (e) => {
-        setFormData({...formData, [e.targetName]: e.targetValue});
+        const {name, value} = e.target;
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+          }));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            await axios.post("http://localhost:5000/api/contact", formData);
+            await axios.post("http://localhost:3000/submit", formData);
             setFormStatus('sent message');
             setFormData({
                 name: '',
@@ -37,15 +42,15 @@ function ContactForm() {
             <form id="contact-form" method="POST" onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" placeholder="Your name..." className="form-control" onChange={handleChange} value={formData.name} required />
+                    <input type="text" name="name" placeholder="Your name..." className="form-control" onChange={handleChange} value={formData.name} required />
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="email" placeholder="Your email..." className="form-control" onChange={handleChange} value={formData.email} required />
+                    <input type="email" name="email" placeholder="Your email..." className="form-control" onChange={handleChange} value={formData.email} required />
                 </div>
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
-                    <textarea className="form-control" placeholder="Your message..." onChange={handleChange} rows="5" value={formData.message} required />
+                    <textarea className="form-control" name="message" placeholder="Your message..." onChange={handleChange} rows="5" value={formData.message} required />
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
                 {formStatus && <p>{formStatus}</p>}
