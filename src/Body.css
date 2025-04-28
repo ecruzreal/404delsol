@@ -1,0 +1,31 @@
+.body-container{
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    background-color: rgb(98, 31, 31);
+    padding: 2rem;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+}
+
+.upcoming-container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-img{
+    height: 15rem;
+    border-radius: 12px;
+}
+
+.upcoming-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+}

@@ -7,28 +7,41 @@ function ContactForm() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        attachment: null,
     });
 
     const [formStatus, setFormStatus] = useState("");
 
     const handleChange = (e) => {
-        const {name, value} = e.target;
-        setFormData((prev) => ({
-            ...prev,
-            [name]: value,
-          }));
+        const {name, value, files} = e.target;
+        if (name === 'attachment') {
+            setFormData({ ...formData, attachment: files[0] });
+          } else {
+            setFormData({ ...formData, [name]: value });
+          }
     };
+
+    const realFormData = new FormData();
+    realFormData.append('name', formData.name);
+    realFormData.append('email', formData.email);
+    realFormData.append('message', formData.message);
+    realFormData.append('attachment', formData.attachment);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            await axios.post("http://localhost:3000/submit", formData);
+            await axios.post("http://localhost:3000/submit", realFormData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
             setFormStatus('sent message');
             setFormData({
                 name: '',
                 email: '',
-                message: ''
+                message: '',
+                attachment: null,
             })
         } catch (err){
             console.error(err);
@@ -51,6 +64,10 @@ function ContactForm() {
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
                     <textarea className="form-control" name="message" placeholder="Your message..." onChange={handleChange} rows="5" value={formData.message} required />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="file">File</label>
+                    <input type="file" className="form-control" name="attachment" placeholder="Upload your audition..." onChange={handleChange} required/>
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
                 {formStatus && <p>{formStatus}</p>}

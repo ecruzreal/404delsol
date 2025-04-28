@@ -1,0 +1,64 @@
+.header-container{
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+}
+
+.header-top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #281504;
+    padding: 1rem;
+    box-shadow: 1px 2px 8px rgb(0, 0, 0);
+}
+
+.logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+.nav-buttons{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    margin-right: 4rem;
+}
+
+.nav-buttons > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+button > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo{
+    height: 10rem;
+    margin-left: 1rem;
+}
+
+.banner{
+    position: relative;
+    background-color: white;
+    height: 30rem;
+    box-shadow: 1px 2px 8px rgb(141, 131, 105) inset;
+}
+
+.cara-img{
+    height: 28rem;
+    margin-top: 1rem;
+}
+
+.react-multiple-carousel__arrow{
+    z-index: 1000;
+}

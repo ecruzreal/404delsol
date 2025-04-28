@@ -1,11 +1,19 @@
 .formContainer{
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(249, 159, 75);
+    width: 30%;
     padding: 1rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+input, textarea{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border-radius: 6px;
+    border: none;
 }
 
 form {

@@ -5,6 +5,15 @@ import mysql from "mysql2/promise";
 import dotenv from "dotenv";
 import { body, validationResult } from "express-validator";
 import rateLimit from "express-rate-limit";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import path from 'path';
+import multer from 'multer';
+
+const upload = multer({ dest: 'uploads/' });
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 dotenv.config();
 
@@ -39,10 +48,13 @@ app.use("/submit", limiter);
 
 console.log('got here')
 app.post("/submit",
+    upload.single('attachment'),
     async (req, res) => {
         console.log("✅ Contact form submitted!");
         console.log("Body received:", req.body);
         const {name, email, message} = req.body;
+        const file = req.file;
+        console.log('Received:', { name, email, message, file });
 
     try{
         const transporter = nodemailer.createTransport({
@@ -61,6 +73,15 @@ app.post("/submit",
             subject: `404 inquiry from ${name}`,
             replyTo: email,
             text: `From: ${name} (${email})\n\n${message}`,
+            attachments: file
+                ? [
+                    {
+                        filename: file.originalname,
+                        path: file.path,
+                        contentType: file.mimetype,
+                    },
+                    ]
+                : [],
         })
         console.log('mail sent');
 

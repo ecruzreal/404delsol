@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './ContactForm.css'
+import './Header.css'
+import './Body.css'
 import ContactForm from './ContactForm.jsx'
 import App from './App.jsx'
 
