@@ -1,4 +1,8 @@
 .body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: #732c2c;
     padding: 2rem;
@@ -212,6 +216,26 @@
     width: 20rem;
 }
 
+.spotify-info{
+    font-size: 2rem;
+    width: 80%;
+}
+
+.spotify-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 5rem;
+}
+
+.spotify-playlist{
+    border-radius: 12px;
+    box-shadow: 1px 2px 7px rgb(55, 31, 31);
+    height: 25rem;
+}
+
 /*-----media-----*/
 
 @media(max-width: 1280px){
@@ -221,6 +245,13 @@
 
     .archive-img{
         height: 15rem;
+    }
+
+    .spotify-info{
+        font-size: 1.7rem;
+    }
+    .spotify-playlist{
+        height: 35rem;
     }
 }
 
@@ -277,6 +308,22 @@
 
     .apply-main-link{
         font-size: 2rem;
+    }
+
+    .spotify-header{
+        font-size: 2rem;
+    }
+
+    .spotify-info{
+        font-size: 1.5rem;
+    }
+
+    .spotify-container{
+        flex-direction: column;
+    }
+
+    .spotify-playlist{
+        height: 35rem;
     }
 }
   

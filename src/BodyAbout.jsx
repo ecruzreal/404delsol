@@ -16,7 +16,7 @@ function BodyAbout(){
                 <div className="about-planners">
                     <div className="about-section">
                         <img className="about-img" src="/images/IMG_6179.jpeg" alt="" />
-                        <p className="coord-info"><strong>ERIC</strong> <br /> <br /> Yo I'm Eky, one of the creators behind 404 DelSol. I wanted to help musicians and artists to come together and have a safe space to perform!</p>
+                        <p className="coord-info"><strong>EKY</strong> <br /> <br /> Yo I'm Eky, one of the creators behind 404 DelSol. I wanted to help musicians and artists to come together and have a safe space to perform!</p>
                     </div>
                     <div className="about-section">
                         <img className="about-img" src="/images/IMG_6180.jpeg" alt="" />
