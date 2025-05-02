@@ -32,10 +32,15 @@
 }
 
 .nav-btn {
+    color: white;
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
     transition: .2s;
+}
+
+.nav-btn:visited{
+    color: white;
 }
 
 .nav-btn:hover{
