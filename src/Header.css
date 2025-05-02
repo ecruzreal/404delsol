@@ -1,7 +1,7 @@
 .header-container{
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
 }
 
@@ -13,6 +13,7 @@
     background-color: #281504;
     padding: 1rem;
     box-shadow: 1px 2px 8px rgb(0, 0, 0);
+    z-index: 1;
 }
 
 .logo-text{
@@ -30,10 +31,15 @@
     margin-right: 4rem;
 }
 
-.nav-buttons > button {
+.nav-btn {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
+    transition: .2s;
+}
+
+.nav-btn:hover{
+    color: rgb(155, 15, 15);
 }
 
 button > a {
@@ -59,6 +65,74 @@ button > a {
     margin-top: 1rem;
 }
 
+.cara-img:hover{
+    filter: brightness(80%);
+}
+
 .react-multiple-carousel__arrow{
     z-index: 1000;
+}
+
+.carousel-container{
+    background-color: rgb(221, 221, 221);
+    padding: 1rem;
+}
+
+.menu-btn{
+    display: none;
+}
+
+#main-menu{
+    display: none;
+}
+
+#main-menu.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10rem;
+    background-color: #281504;
+    z-index: 3;
+}
+
+@media(max-width: 1280px){
+
+    .logo-text{
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        height: 5rem;
+    }
+
+    .nav-btn{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 700px){
+
+    .nav-buttons{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .logo{
+        height: 5rem;
+        margin-left: 0;
+    }
+
+    .logo-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        gap: 0;
+    }
+
+    .menu-btn{
+        display: block;
+    }
 }

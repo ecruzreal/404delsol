@@ -1,0 +1,123 @@
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    background-color: #732c2c;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    min-height: 32rem;
+    padding-bottom: 15rem;
+}
+
+.contact-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.contact-header{
+    margin-top: 2rem;
+}
+
+a{
+    color: orange;
+}
+
+.contact-basic{
+    background-color: #fff4b3;
+    color: black;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 650px;
+}
+
+.form-group.comments.email-comments{
+    border: none;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff4b3;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: black;
+    border-radius: 12px;
+}
+
+.pre-form{
+    color: black;
+    background-color: #fff4b3;
+    border: 2px solid black;
+}
+
+.apply-link{
+    color: black;
+    cursor: pointer;
+}
+
+.email-form{
+    color: black;
+}
+
+.email-submit{
+    background-color: orange;
+}
+
+Link{
+    color: black;
+}
+
+@media(max-width: 1280px){
+    .form-group.comments.email-comments > .for-area{
+        width: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    .contact-header{
+        font-size: 1.5rem;
+    }
+
+    .contact-us{
+        width: 75%;
+    }
+
+    .contact-body{
+        min-height: 75rem;
+    }
+
+    .contact-basic{
+        font-size: 1rem;
+        width: 40%;
+    }
+
+    .email-form{
+        width: 75%;
+    }
+
+    .form-group.comments.email-comments{
+        width: 80%;
+    }
+
+    .form-group.comments.email-comments > .for-area{
+        width: 180%;
+    }
+
+    .pre-form{
+        width: 75%;
+    }
+}

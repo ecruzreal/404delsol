@@ -1,17 +1,80 @@
 .body-container{
     position: relative;
-    height: 100%;
-    width: 100vw;
-    background-color: rgb(98, 31, 31);
+    background-color: #732c2c;
     padding: 2rem;
     font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    padding-bottom: 4rem;
+}
+
+.about-body-container{
+    position: relative;
+    width: 100vw;
+    background-color: #732c2c;
+    padding: 2rem;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    padding-bottom: 4rem;
+}
+
+.about-planners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.coord-info{
+    background-color: white;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 12px;
+    color: black;
+}
+
+.about-header{
+    padding: 0;
+    margin: 0;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-summary{
+    display: flex;
+    width: 75%;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.about-img{
+    height: 25rem;
+    border-radius: 12px;
+    border: 2px solid black;
 }
 
 .upcoming-container{
     display: flex;
+    width: 100vw;
+    flex-direction: column;
     gap: 3rem;
     align-items: center;
-    justify-content: center;
+    margin-top: 10rem;
+    min-height: 30rem;
 }
 
 .upcoming-img{
@@ -29,3 +92,173 @@
     padding: 1rem;
     border-radius: 12px;
 }
+
+.archive-body{
+    display: flex;
+    justify-content: center;
+    background-color: #732c2c;
+    min-height: 50rem;
+    padding-bottom: 10rem;
+    padding-top: 3rem;
+    width: 100vw;
+}
+
+.archive-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.archive-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 2rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.archive-header{
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+}
+
+.archive-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.archive-img{
+    height: 25rem;
+}
+
+.archive-link{
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.archive-fallback{
+    height: 100;
+}
+
+.fallback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff4b3;
+}
+
+.carousel-container{
+    background-color: #fff4b3;
+    overflow: hidden;
+    width: 200%;
+}
+  
+.carousel-track {
+    display: flex;
+    position: relative;
+    animation: scroll 40s linear infinite;
+    width: max-content;
+    overflow-x: hidden;
+}
+
+.carousel-img {
+    height: 30rem;
+    margin-right: .5rem;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+    }
+
+.apply-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: #732c2c;
+}
+
+#names-instruments, #songs-id{
+    width: 20rem;
+}
+
+/*-----media-----*/
+
+@media(max-width: 1280px){
+    .carousel-img{
+        height: 25rem
+    }
+
+    .archive-img{
+        height: 15rem;
+    }
+}
+
+@media(max-width: 700px){
+    .carousel-img{
+        height: 12rem;
+    }
+
+    .upcoming-title{
+        font-size: 2rem;
+    }
+
+    .about-body-container > h1{
+        font-size: 2rem;
+    }
+
+    .about-content > h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-planners{
+        flex-direction: column;
+    }
+
+    .about-section{
+        gap: 1rem;
+    }
+
+    .coord-info{
+        width: 70%;
+    }
+
+    .archive-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .archive-img{
+        height: 12rem;
+    }
+
+    .archive-body{
+        padding-top: 1rem;
+    }
+
+    .archive-nav{
+        flex-direction: column;
+        font-size: .8rem;
+        gap: 1rem;
+    }
+}
+  
