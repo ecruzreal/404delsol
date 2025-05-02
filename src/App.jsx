@@ -8,6 +8,7 @@ import Archive from './Archive'
 import Contact from './Contact';
 import Apply from './Apply';
 import ScrollToTop from './ScrollToTop';
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path='/apply' element={<Apply />}></Route>
         </Routes>
         <Footer />
+        <Analytics />
     </div>
   )
 };
