@@ -21,6 +21,7 @@ function ContactForm() {
         message: '',
     });
 
+    const [modalOpen, setModalOpen] = useState(false);
     const [formStatus, setFormStatus] = useState("");
 
     const handleChange = (e) => {
@@ -53,13 +54,14 @@ function ContactForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setFormStatus('loading')
         try{
             await axios.post("/api/submit", formData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
             });
-            setFormStatus('Application Sent Successfully!');
+            setFormStatus('success');
             setFormData({
                 name: '',
                 email: '',
@@ -77,8 +79,13 @@ function ContactForm() {
             })
         } catch (err){
             console.error(err);
-            setFormStatus('Your Application Could Not Be Sent, Try Again Later');
+            setFormStatus('error');
         }
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+        setFormStatus('');
     };
 
     return (
@@ -250,8 +257,18 @@ function ContactForm() {
                     <textarea id="apply-message" className="form-control for-area" name="message" placeholder="Comments..." onChange={handleChange} rows="5" value={formData.message} required />
                 </div>
                 <button type="submit" className="submit-btn">Submit</button>
-                {formStatus && <p className="form-status">{formStatus}</p>}
             </form>
+
+            {modalOpen && (
+                <div className="modal">
+                     <div className="modal-content">
+                        {formStatus === 'loading' && <p>Sending...</p>}
+                        {formStatus === 'success' && <p>Application sent succesfully! We'll be in touch soon. If you have any urgent questions, please message @404delsol.uci on Instagram.</p>}
+                        {formStatus === 'error' && <p>Failed to send application, please try again later.</p>}
+                        <button onClick={closeModal}>Close</button>
+                     </div>
+                </div>
+            )}
         </div>
     );
 
