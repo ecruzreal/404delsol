@@ -63,7 +63,7 @@ function Archive() {
                         ) : (
                         <div className="fallback">
                             <img src={fallbackimage} className="archive-img" alt="No media available" />
-                            <p className="fallback-text">Nothing to see here, for now..</p>
+                            <p className="fallback-text">Nothing to see here</p>
                         </div>
                     )}
                 </div>

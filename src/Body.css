@@ -230,7 +230,7 @@
     }
 
     .upcoming-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .about-body-container > h1{
@@ -269,6 +269,14 @@
         flex-direction: column;
         font-size: .8rem;
         gap: 1rem;
+    }
+
+    .flyer-img{
+        height: 20rem;
+    }
+
+    .apply-main-link{
+        font-size: 2rem;
     }
 }
   
