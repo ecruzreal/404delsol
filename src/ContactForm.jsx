@@ -54,7 +54,8 @@ function ContactForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setFormStatus('loading')
+        setFormStatus('loading');
+        setModalOpen(true);
         try{
             await axios.post("/api/submit", formData, {
                 headers: {
