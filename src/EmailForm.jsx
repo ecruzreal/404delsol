@@ -22,7 +22,7 @@ function EmailForm(){
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            await axios.post("http://localhost:3000/submit-email", formData, {
+            await axios.post("/api/submit-email", formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

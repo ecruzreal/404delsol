@@ -54,7 +54,7 @@ function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            await axios.post("http://localhost:3000/submit", formData, {
+            await axios.post("/api/submit", formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
