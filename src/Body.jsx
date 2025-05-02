@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Carousel from "react-multi-carousel";
+import { Link } from "react-router-dom";
 
 const images = [
     "IMG_6154.jpeg",
@@ -14,9 +15,12 @@ function Body(){
     return (
         <div className="body-container">
             <div className="upcoming-container">
-                <h1 className="upcoming-title">UPCOMING</h1> 
+                <h1 className="upcoming-title">UPCOMING: SHOW 6</h1> 
                 <div className="upcoming-card">
-                    <p>Nothing to see here, for now..</p>
+                    <img className="flyer-img" src="images/show-6-flyer.jpeg" alt="" />
+                </div>
+                <div className="apply-now">
+                    <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
                 </div>
             </div>
         </div>

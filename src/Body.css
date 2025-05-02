@@ -74,8 +74,18 @@
     gap: 3rem;
     align-items: center;
     margin-top: 10rem;
+    margin-bottom: 10rem;
     min-height: 30rem;
 }
+
+.flyer-img{
+    height: 30rem;
+}
+
+.apply-main-link{
+    font-size: 3rem;
+}
+
 
 .upcoming-img{
     height: 15rem;
