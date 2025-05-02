@@ -24,7 +24,7 @@ function EmailForm(){
         try{
             await axios.post("/api/submit-email", formData, {
                 headers: {
-                    'Content-Type': 'multipart/form-data'
+                    'Content-Type': 'application/json'
                 }
             });
             setFormStatus('sent message');

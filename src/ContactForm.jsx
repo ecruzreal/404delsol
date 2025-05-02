@@ -56,7 +56,7 @@ function ContactForm() {
         try{
             await axios.post("/api/submit", formData, {
                 headers: {
-                    'Content-Type': 'multipart/form-data'
+                    'Content-Type': 'application/json'
                 }
             });
             setFormStatus('Application Sent Successfully!');
