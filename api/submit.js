@@ -1,5 +1,6 @@
 //import mysql from 'mysql2/promise';
 import nodemailer from 'nodemailer';
+import axios from 'axios';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -79,6 +80,11 @@ export default async function handler(req, res) {
       [name, email, message]
     );
     */
+    try{
+        await axios.post('https://script.google.com/macros/s/AKfycbz3RSB1OnXDJDUysqcjuu-nY4wAi83pDPk6oWuBF2rlpMNYf8cWCMzYhOSvWygTaYzw/exec', req.body);
+    } catch (err){
+        console.error('Failed to write to google sheets: ', err);
+    }
 
     res.status(200).json({ message: 'Success' });
   } catch (error) {
