@@ -54,11 +54,13 @@ export default async function handler(req, res) {
                     </html>`
     });
 
+    /*
     try{
         await axios.post('https://script.google.com/macros/s/AKfycbzWN1JutnFaiEd4DSSd7OjLeycxZAO4wwODJqn5mHt4XUwpKAu3NMg_qYchRguiu_z_/exec', req.body);
     } catch (err){
         console.error('Failed to write to google sheets: ', err);
     }
+    */
 
 
     res.status(200).json({ message: 'Success' });
