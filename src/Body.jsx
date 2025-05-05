@@ -28,6 +28,7 @@ function Body(){
                 </div>
                 <div className="apply-now">
                     <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
+                    <span>APPLICATIONS CLOSE MAY 25th</span>
                 </div>
             </div>
         </div>

@@ -93,7 +93,7 @@ function ContactForm() {
         <div className="formContainer" id="form-container">
             <p className="form-info">This form is if you are a current UCI Student interested in performing at 404 Del Sol. We are a DIY venue with a passion for providing <br /> a space for artists to perform and cultivate a supportive music-loving community. For equipment, we can provide a PA system, mics, mixer, etc. Each act will be given roughly 30 minutes (6-8 songs). It's okay to be slightly over or under but please do not abuse this freedom.
                     DISCLAIMER: THE "VENUE" WILL LIKELY BE OUTDOORS. 
-                    If you have any urgent questions please DM @404delsol.uci on Instagram!</p>
+                    If you have any urgent questions please DM @404delsol.uci on Instagram! <br />IMPORTANT: APPLICATIONS CLOSE MAY 25th!</p>
             <form id="contact-form" method="POST" onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
                 <div className="first-section">
                     <div className="form-group">
