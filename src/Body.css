@@ -236,6 +236,12 @@
     height: 25rem;
 }
 
+.apply-now{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
 /*-----media-----*/
 
 @media(max-width: 1280px){
@@ -303,7 +309,7 @@
     }
 
     .flyer-img{
-        height: 20rem;
+        height: 17rem;
     }
 
     .apply-main-link{
@@ -324,6 +330,12 @@
 
     .spotify-playlist{
         height: 35rem;
+    }
+
+    .apply-now{
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
     }
 }
   
