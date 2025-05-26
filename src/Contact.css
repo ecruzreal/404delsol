@@ -62,6 +62,7 @@ a{
     color: black;
     background-color: #fff4b3;
     border: 2px solid black;
+    display: none;
 }
 
 .apply-link{

@@ -105,6 +105,7 @@
     background-color: white;
     padding: 1rem;
     border-radius: 12px;
+    display: none;
 }
 
 .archive-body{
@@ -240,6 +241,26 @@
     font-size: 2rem;
     display: flex;
     flex-direction: column;
+    display: none;
+}
+
+.apps-closed{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 3rem;
+}
+
+.apps-closed > img{
+    height: 15rem;
+}
+
+.apps-closed > p{
+    font-size: 2.5rem;
+    width: 80%;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
 }
 
 /*-----media-----*/
