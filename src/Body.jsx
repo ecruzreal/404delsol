@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Carousel from "react-multi-carousel";
 import { Link } from "react-router-dom";
+import logo from '/src/404logo.png';
 
 const images = [
     "IMG_6154.jpeg",
@@ -26,9 +27,11 @@ function Body(){
                 <div className="upcoming-card">
                     <img className="flyer-img" src="images/show-6-flyer.jpeg" alt="" />
                 </div>
-                <div className="apply-now">
-                    <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
-                    <span>APPLICATIONS CLOSE MAY 25th</span>
+                <div className="apps-closed">
+                    <img src={logo} alt="" />
+                    <p>Applications for Show 6 have now closed! If you have any questions, send us an email at
+                        404delsol@gmail.com, or DM us on <a href="https://www.instagram.com/404delsol.uci/" target="blank">instagram</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -44,6 +47,11 @@ function Body(){
                     ))}
                 </div>
 </div>
+
+<div className="apply-now">
+    <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
+    <span>APPLICATIONS CLOSE MAY 25th</span>
+ </div>
 */
 
 export default Body;
