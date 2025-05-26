@@ -247,7 +247,6 @@
 .apps-closed{
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     height: 100vh;
     margin-top: 3rem;
@@ -357,6 +356,11 @@
         font-size: .8rem;
         display: flex;
         flex-direction: column;
+    }
+
+    .apps-closed > p{
+        font-size: 1.5rem;
+        width: 90%;
     }
 }
   
