@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 
 const mediasets = {
     "show-1": [
-        "IMG_6150.jpeg", "IMG_6151.jpeg", "IMG_6152.jpeg",
+        "show1flyer.jpg","IMG_6150.jpeg", "IMG_6151.jpeg", "IMG_6152.jpeg",
          "IMG_6153.jpeg", "IMG_6154.jpeg", "IMG_6155.jpeg",
           "IMG_6156.jpeg", "IMG_6157.jpeg", "IMG_6158.jpeg"
     ],
     "show-2": [
-        "IMG_6159.jpeg", "IMG_6160.jpeg", "IMG_6161.jpeg",
+        "show2flyer.jpg", "IMG_6159.jpeg", "IMG_6160.jpeg", "IMG_6161.jpeg",
         "IMG_6162.jpeg", "IMG_6163.jpeg", "IMG_6164.jpeg",
         "IMG_6165.jpeg"
     ],
-    "show-3": [],
+    "show-3": ["show3flyer.jpg",],
     "show-4": [
-        "IMG_1121.JPG", "IMG_1131.JPG", "IMG_1132.JPG",
+        "show4flyer.jpg","IMG_1121.JPG", "IMG_1131.JPG", "IMG_1132.JPG",
         "IMG_1133.JPG", "IMG_1135.JPG", "IMG_1136.JPG",
         "IMG_1139.JPG", "IMG_1144.JPG", "IMG_1125.JPG",
         "IMG_6175.jpeg", "IMG_6176.jpeg", "IMG_6178.jpeg"
     ],
     "show-5": [
-        "2-DSC_1319.jpg", "4-DSC_1326.jpg", "5-DSC_1331.jpg",
+        "show5flyer.png","2-DSC_1319.jpg", "4-DSC_1326.jpg", "5-DSC_1331.jpg",
         "6-DSC_1342.jpg", "7-DSC_1343.jpg", "8-DSC_1345.jpg",
         "9-DSC_1346.jpg", "10-DSC_1348.jpg", "11-DSC_1350.jpg",
         "12-DSC_1360.jpg", "13-DSC_1361.jpg", "14-DSC_1367.jpg",
@@ -32,6 +32,9 @@ const mediasets = {
         "30-IMG_2446.jpg", "31-IMG_2447.jpg", "32-IMG_2497.jpg",
         "33-IMG_2499.jpg", "34-IMG_2509.jpg", "35-IMG_2573.jpg",
         "36-IMG_2585.jpg", "37-IMG_2588.jpg"
+    ],
+    "show-6": [
+        "show6flyer.jpg"
     ]
 };
 
@@ -51,6 +54,7 @@ function Archive() {
                     <Link className="archive-link" to="/archive/show-3">SHOW 3</Link>
                     <Link className="archive-link" to="/archive/show-4">SHOW 4</Link>
                     <Link className="archive-link" to="/archive/show-5">SHOW 5</Link>
+                    <Link className="archive-link" to="/archive/show-6">SHOW 6</Link>
                 </nav>
                 <h2 className="archive-header">{archiveID.replace('-', ' ').replace('show', 'SHOW')} ARCHIVE</h2>
                 <div className={media.length > 0 ? "archive-grid" : "archive-fallback"}>

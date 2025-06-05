@@ -23,14 +23,14 @@ function Body(){
                 <iframe className="spotify-playlist" src="https://open.spotify.com/embed/playlist/27c85JpJNg0jAAHE0XPwpF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
             <div className="upcoming-container">
-                <h1 className="upcoming-title">UPCOMING: SHOW 6</h1> 
+                <h1 className="upcoming-title">SHOW 6: THANKS FOR COMING!</h1> 
                 <div className="upcoming-card">
-                    <img className="flyer-img" src="images/show-6-flyer.jpeg" alt="" />
+                    <img className="flyer-img" src="images/show6flyer.jpg" alt="" />
                 </div>
                 <div className="apps-closed">
                     <img src={logo} alt="" />
-                    <p>Applications for Show 6 have now closed! If you have any questions, send us an email at
-                        404delsol@gmail.com, or DM us on <a href="https://www.instagram.com/404delsol.uci/" target="blank">instagram</a>
+                    <p>If you have any photos or videos from SHOW 6, send us an email at
+                        404delsol@gmail.com, or DM us on <a href="https://www.instagram.com/404delsol.uci/" target="blank">instagram!</a> Be sure to include your name so we can credit you!
                     </p>
                 </div>
             </div>
