@@ -34,7 +34,13 @@ const mediasets = {
         "36-IMG_2585.jpg", "37-IMG_2588.jpg"
     ],
     "show-6": [
-        "show6flyer.jpg"
+        "show6flyer.jpg", "DSCN5458.jpeg", "DSCN5459.jpeg", "DSCN5460.jpeg",
+        "DSCN5461.jpeg", "DSCN5462.jpeg", "DSCN5463.jpeg", "DSCN5464.jpeg",
+        "DSCN5465.jpeg", "DSCN5466.jpeg", "DSCN5469.jpeg", "DSCN5470.jpeg",
+        "DSCN5471.jpeg", "DSCN5472.jpeg", "DSCN5474.jpeg", "DSCN5475.jpeg",
+        "DSCN5476.jpeg", "DSCN5477.jpeg", "DSCN5478.jpeg", "DSCN5479.jpeg",
+        "DSCN5480.jpeg", "DSCN5481.jpeg", "DSCN5482.jpeg", "DSCN5496.jpeg",
+        "DSCN5498.jpeg"
     ]
 };
 
