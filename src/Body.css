@@ -10,6 +10,14 @@
     padding-bottom: 4rem;
 }
 
+.body-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .about-body-container{
     position: relative;
     width: 100vw;
@@ -78,8 +86,7 @@
     gap: 3rem;
     align-items: center;
     margin-top: 10rem;
-    margin-bottom: 10rem;
-    min-height: 30rem;
+    height: 80rem;
 }
 
 .flyer-img{
@@ -173,35 +180,115 @@
     align-items: center;
 }
 
-.carousel-wrapper {
-    overflow: hidden;
-    width: 100%;
-    background-color: #fff4b3;
-}
-
-.carousel-container{
-    background-color: #fff4b3;
-    overflow: hidden;
-    width: 200%;
-}
-  
-.carousel-track {
-    display: flex;
-    position: relative;
-    animation: scroll 40s linear infinite;
-    width: max-content;
-    overflow-x: hidden;
-}
-
 .carousel-img {
-    height: 30rem;
-    margin-right: .5rem;
+    width: 500px;
+    height: auto;
     flex-shrink: 0;
+}
+
+.c-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.carousel {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex: 0 0 100%;
+  }
+
+.group {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform;
+    animation: scroll 30s linear infinite;
+  }
+
+.card {
+    color: white;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    padding: 20px;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+
+    &:nth-child(1) {
+        background: #ff8d58;
+    }
+
+    &:nth-child(2) {
+        background: #f28d34;
+    }
+
+    &:nth-child(3) {
+        background: #da5e00;
+    }
+
+    &:nth-child(4) {
+        background: #e67709;
+    }
+
+    &:nth-child(5) {
+        background: #f78228;
+    }
+}
+
+.c-left, .c-right{
+    background: linear-gradient(90deg,rgba(250, 105, 27, 1) 0%, rgba(255, 153, 28, 1) 50%, rgba(255, 233, 38, 1) 100%);
+    background-size: 200% 200%;
+    -webkit-animation: Animation 10s ease infinite;
+    -moz-animation: Animation 10s ease infinite;
+    animation: Animation 10s ease infinite;
+    width: 5rem;
+    margin-top: 2rem;
+    height: 32.5rem;
+}
+
+.c-left{
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.c-right{
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+
+@-webkit-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Animation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.whole-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-100%); }
     }
 
 .apply-body{
@@ -228,6 +315,7 @@
     align-items: center;
     width: 75%;
     gap: 5rem;
+    margin-bottom: 3rem;
 }
 
 .spotify-playlist{
@@ -268,6 +356,26 @@
         height: 25rem
     }
 
+    .card{
+        height: 20rem;
+    }
+
+    .c-left, .c-right{
+        height: 22.5rem;
+    }
+
+    .c-left{
+        padding-left: 5rem;
+    }
+
+    .c-right{
+        padding-right: 5rem;
+    }
+
+    .c-container, .carousel{
+        max-width: 1000px;
+    }
+
     .archive-img{
         height: 15rem;
     }
@@ -275,14 +383,33 @@
     .spotify-info{
         font-size: 1.7rem;
     }
+
+    .spotify-header{
+        font-size: 2rem;
+    }
+
     .spotify-playlist{
         height: 35rem;
+        width: 70%;
+    }
+
+    .spotify-container{
+        flex-direction: column;
+    }
+
+    .upcoming-container{
+        margin-top: 3rem;
     }
 }
 
 @media(max-width: 700px){
     .carousel-img{
         height: 12rem;
+    }
+
+    .card{
+        height: 15rem;
+        padding: 2px;
     }
 
     .upcoming-title{
@@ -337,10 +464,12 @@
 
     .spotify-header{
         font-size: 2rem;
+        width: 50%;
     }
 
     .spotify-info{
         font-size: 1.5rem;
+        width: 30%;
     }
 
     .spotify-container{
@@ -349,6 +478,7 @@
 
     .spotify-playlist{
         height: 35rem;
+        width: 30%;
     }
 
     .apply-now{
