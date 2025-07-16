@@ -32,39 +32,23 @@ const responsive = {
 function Body(){
     return (
         <div className="body-all">
-            <div className="whole-c">
-            <div className="c-left"></div>
-            <div className="c-container">
-                <div class="carousel">
-                    <div class="group">
-                        <img src="images/IMG_6168.jpeg" className="card" alt="" />
-                        <img src="images/IMG_6169.jpeg" className="card"  alt="" />
-                        <img src="images/IMG_6170.jpeg" className="card"  alt="" />
-                        <img src="images/IMG_6171.jpeg" className="card"  alt="" />
-                        <img src="images/IMG_6172.jpeg" className="card"  alt="" />
-                    </div>
-                    <div aria-hidden class="group">
-                        <img src="images/IMG_6168.jpeg" className="card" alt="" />
-                        <img src="images/IMG_6169.jpeg" className="card"  alt="" />
-                        <img src="images/IMG_6170.jpeg" className="card"  alt="" />
-                        <img src="images/IMG_6171.jpeg" className="card"  alt="" />
-                        <img src="images/IMG_6172.jpeg" className="card"  alt="" />
-                    </div>
-                </div>
-            </div>
-            <div className="c-right"></div>
-            </div>
             <div className="body-container">
                 <div className="upcoming-container">
-                    <h1 className="upcoming-title">UPCOMING:</h1> 
-                    <h1 className="upcoming-title">404 SUMMER SHOWS - STAY TUNED!</h1> 
+                    <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
+                    <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
+                    <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
+                    <h1 className="upcoming-title">404 SUMMER SHOWS -  <br /> SUNBURNT SESSIONS</h1> 
+                    <img id="home-alien" className="patch" src="images/trans.webp" alt="" />
                     <div className="upcoming-card">
-                        <img className="flyer-img" src="images/summer-shows.png" alt="" />
+                        <img className="flyer-img" src="images/sunburntsession.webp" alt="" />
                     </div>
+                    <img id="home-anteaters" className="patch" src="images/trans.webp" alt="" />
                     <div className="apps-closed">
-                        <img src={logo} alt="" />
+                        <img id="sunp" src='images/sunpatch.webp' alt="" />
                     </div>
                 </div>
+                <img id="home-heart" className="patch" src="images/trans.webp" alt="" />
+                <img id="home-mic" className="patch" src="images/trans.webp" alt="" />
                 <h1 className="spotify-header">OUR STAGE, YOUR SOUNDTRACKS</h1>
                 <div className="spotify-container">
                     <p className="spotify-info"> <br />
@@ -78,6 +62,8 @@ function Body(){
 }
 
 /*
+<h1 className="upcoming-title">UPCOMING:</h1> 
+
 <div className="carousel-container">
                 
                 <div className="carousel-track">
@@ -112,6 +98,29 @@ function Body(){
                 <div>Item 3</div>
                 <div>Item 4</div>
             </Carousel>
+
+<div className="whole-c">
+            <div className="c-left"></div>
+            <div className="c-container">
+                <div class="carousel">
+                    <div class="group">
+                        <img src="images/IMG_6168.jpeg" className="card" alt="" />
+                        <img src="images/IMG_6169.jpeg" className="card"  alt="" />
+                        <img src="images/IMG_6170.jpeg" className="card"  alt="" />
+                        <img src="images/IMG_6171.jpeg" className="card"  alt="" />
+                        <img src="images/IMG_6172.jpeg" className="card"  alt="" />
+                    </div>
+                    <div aria-hidden class="group">
+                        <img src="images/IMG_6168.jpeg" className="card" alt="" />
+                        <img src="images/IMG_6169.jpeg" className="card"  alt="" />
+                        <img src="images/IMG_6170.jpeg" className="card"  alt="" />
+                        <img src="images/IMG_6171.jpeg" className="card"  alt="" />
+                        <img src="images/IMG_6172.jpeg" className="card"  alt="" />
+                    </div>
+                </div>
+            </div>
+            <div className="c-right"></div>
+  </div>
 
 */
 
