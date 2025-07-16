@@ -14,7 +14,7 @@
     z-index: -1;
     width: 250px;
     height: 250px;
-    background: url(images/patchsheet1.webp) 0 0;
+    background: url(/images/patchsheet1.webp) 0 0;
     left: 10%;
     top: 1%;
     rotate: -10deg;
@@ -25,7 +25,7 @@
     z-index: -1;
     width: 250px;
     height: 255px;
-    background: url(images/patchsheet1.webp) -250px 0;
+    background: url(/images/patchsheet1.webp) -250px 0;
     top: 25%;
     right: 10%;
     rotate: 8deg;
@@ -36,7 +36,7 @@
     z-index: -1;
     width: 250px;
     height: 255px;
-    background: url(images/patchsheet1.webp) -250px -500px;
+    background: url(/images/patchsheet1.webp) -250px -500px;
     top: 35%;
     left: 10%;
     rotate: -10deg;
@@ -47,7 +47,7 @@
     z-index: -1;
     width: 250px;
     height: 255px;
-    background: url(images/patchsheet1.webp) -250px -256px;
+    background: url(/images/patchsheet1.webp) -250px -256px;
     top: 5%;
     right: 10%;
     rotate: -15deg;
@@ -58,7 +58,7 @@
     z-index: -1;
     width: 250px;
     height: 255px;
-    background: url(images/patchsheet1.webp) -500px 0;
+    background: url(/images/patchsheet1.webp) -500px 0;
     top: 70%;
     left: 12%;
     rotate: -10deg;
@@ -69,7 +69,7 @@
     z-index: -1;
     width: 250px;
     height: 255px;
-    background: url(images/patchsheet1.webp) -755px 0;
+    background: url(/images/patchsheet1.webp) -755px 0;
     top: 60%;
     right: 6%;
 }
@@ -79,7 +79,7 @@
     z-index: -1;
     width: 250px;
     height: 250px;
-    background: url(images/patchsheet1.webp) 0 -520px;
+    background: url(/images/patchsheet1.webp) 0 -520px;
     top: -6%;
     left: 5%;
     rotate: -20deg;
@@ -90,7 +90,7 @@
     z-index: -1;
     width: 250px;
     height: 250px;
-    background: url(images/patchsheet1.webp) 0 -270px;
+    background: url(/images/patchsheet1.webp) 0 -270px;
     top: 25%;
     right: 5%;
     rotate: -20deg;
@@ -101,7 +101,7 @@
     z-index: -1;
     width: 250px;
     height: 250px;
-    background: url(images/patchsheet1.webp) -500px -275px;
+    background: url(/images/patchsheet1.webp) -500px -275px;
     top: 60%;
     left: 5%;
     rotate: 20deg;
