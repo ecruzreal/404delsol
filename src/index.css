@@ -6,7 +6,6 @@
 
   color-scheme: light dark;
   color: white;
-  background-color: #732c2c;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,6 +29,9 @@ body {
   place-items: center;
   min-width: 320px;
   overflow-x: hidden;
+  background-image: url(/images/jeans.webp);
+  background-repeat: repeat;
+  background-size: 200px;
 }
 
 h1 {

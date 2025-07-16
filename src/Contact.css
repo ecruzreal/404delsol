@@ -1,12 +1,45 @@
 .contact-body{
     display: flex;
     flex-direction: column;
-    background-color: #732c2c;
-    width: 100vw;
-    height: 100vh;
-    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
-    min-height: 32rem;
+    width: 100svw;
+    height: 100%;
     padding-bottom: 15rem;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+}
+
+
+#contact-alien{
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 258px;
+    background: url(/images/patchsheet1.webp) -250px -0;
+    top: 15%;
+    left: -2%;
+    rotate: -20deg;
+}
+
+#contact-bluestar{
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 270px;
+    background: url(/images/patchsheet1.webp) -0 -250px;
+    top: 70%;
+    right: 3%;
+    rotate: 20deg;
+}
+
+#contact-anteaters{
+    display: none;
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 258px;
+    background: url(/images/patchsheet1.webp) -250px -500px;
+    top: 90%;
+    left: 5%;
+    rotate: -10deg;
 }
 
 .contact-general{
@@ -30,7 +63,6 @@ a{
     color: black;
     padding: 1rem;
     border-radius: 12px;
-    width: 650px;
 }
 
 .form-group.comments.email-comments{
@@ -86,6 +118,35 @@ Link{
     .form-group.comments.email-comments > .for-area{
         width: 100%;
     }
+
+    #contact-alien{
+        background-size: 650px 650px;
+        background-position: -160px 0;
+        height: 175px;
+        width: 170px;
+    }
+
+    #contact-bluestar{
+        background-size: 650px 650px;
+        background-position: 0 -165px;
+        height: 175px;
+        width: 170px;
+        right: 10%;
+        top: 60%;
+    }
+
+    #contact-anteaters{
+        background-size: 650px 650px;
+        background-position: -160px -350px;
+        height: 175px;
+        width: 175px;
+        top: 60%;
+    }
+
+    .contact-us{
+        width: 80%;
+        padding-bottom: 10rem;
+    }
 }
 
 @media(max-width: 700px){
@@ -95,10 +156,6 @@ Link{
 
     .contact-us{
         width: 75%;
-    }
-
-    .contact-body{
-        min-height: 75rem;
     }
 
     .contact-basic{
@@ -120,5 +177,13 @@ Link{
 
     .pre-form{
         width: 75%;
+    }
+
+    #contact-bluestar{
+        top: 5%;
+    }
+
+    #contact-anteaters{
+        display: none;
     }
 }
