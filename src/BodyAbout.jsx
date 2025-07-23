@@ -1,7 +1,7 @@
 function BodyAbout(){
     return (
         <div className="about-body-container">
-            <h1>ABOUT US</h1>
+            <h1 className="abtheadmain">ABOUT US</h1>
             <img id="abt-orangebtn" src="images/trans.webp" alt="" />
             <img id="abt-starbtn" src="images/trans.webp" alt="" />
             <div className="about-content">
@@ -15,7 +15,7 @@ function BodyAbout(){
                     </p>
                 </div>
                 <img id="abt-bluestar" src="images/trans.webp" alt="" />
-                <h2>MEET THE ORGANIZERS</h2>
+                <h2 className="abtmeet">MEET THE ORGANIZERS</h2>
                 <img id="abt-redstar" src="images/trans.webp" alt="" />
                 <img id="abt-guitar" src="images/guitarpatch.webp" alt="" />
                 <div className="about-planners">
