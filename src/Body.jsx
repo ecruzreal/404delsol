@@ -37,10 +37,13 @@ function Body(){
                     <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1 className="upcoming-title">404 SUMMER SHOWS -  <br /> SUNBURNT SESSIONS</h1> 
+                    <h1 className="upcoming-title">404 SUMMER SHOWS -  <br /> SUNBURNT SESSIONS </h1> 
+                    <h2 className="summthanks">THANKS FOR ROCKING WITH US! STAY TUNED FOR MORE SUNBURNT JAMS...</h2>
+                    <p className="dmphotos">If you have any photos or videos from SUNBURNT SESSION I, send us an email at
+                        404delsol@gmail.com, or DM us on <a href="https://www.instagram.com/404delsol.uci/" target="blank">instagram!</a> Be sure to include your name so we can credit you!
+                    </p>
                     <img id="home-alien" className="patch" src="images/trans.webp" alt="" />
                     <div className="upcoming-card">
-                        <img className="flyer-img" src="images/sunburntsession.webp" alt="" />
                     </div>
                     <img id="home-anteaters" className="patch" src="images/trans.webp" alt="" />
                     <div className="apps-closed">

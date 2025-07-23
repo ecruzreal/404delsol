@@ -206,6 +206,14 @@
     margin: 0;
 }
 
+.abtheadmain{
+    text-shadow: 3px 1px 5px black;
+}
+
+.abtmeet{
+    text-shadow: 3px 1px 5px black;
+}
+
 .about-content{
     display: flex;
     flex-direction: column;
@@ -245,6 +253,7 @@
     gap: 3rem;
     align-items: center;
     margin-top: 10rem;
+    text-shadow: 3px 1px 5px black;
 }
 
 .flyer-img{
@@ -262,7 +271,7 @@
 }
 
 .upcoming-card{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -270,6 +279,11 @@
     background-color: white;
     padding: 1rem;
     border-radius: 12px;
+}
+
+.dmphotos{
+    width: 70%;
+    text-shadow: 1px 1px 2px black;
 }
 
 .archive-body{
@@ -286,6 +300,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    text-shadow: 3px 1px 5px black;
 }
 
 .archive-grid{
@@ -301,6 +316,7 @@
 
 .archive-header{
     font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    text-shadow: 3px 1px 5px black;
 }
 
 .archive-content{
@@ -473,6 +489,11 @@
     width: 75%;
     gap: 5rem;
     margin-bottom: 3rem;
+    text-shadow: 3px 1px 5px black;
+}
+
+.spotify-header{
+    text-shadow: 3px 1px 5px black;
 }
 
 .spotify-playlist{
