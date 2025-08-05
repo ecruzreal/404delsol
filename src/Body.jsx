@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { InstagramEmbed } from 'react-social-media-embed';
 import { Link } from "react-router-dom";
 import logo from '/src/404logo.png';
 
@@ -37,13 +38,17 @@ function Body(){
                     <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1 className="upcoming-title">404 SUMMER SHOWS -  <br /> SUNBURNT SESSIONS </h1> 
-                    <h2 className="summthanks">THANKS FOR ROCKING WITH US! STAY TUNED FOR MORE SUNBURNT JAMS...</h2>
-                    <p className="dmphotos">If you have any photos or videos from SUNBURNT SESSION I, send us an email at
-                        404delsol@gmail.com, or DM us on <a href="https://www.instagram.com/404delsol.uci/" target="blank">instagram!</a> Be sure to include your name so we can credit you!
-                    </p>
+                    <h1 className="upcoming-title">404 SUMMER SHOWS -  <br /> SUNBURNT SESSION II</h1> 
                     <img id="home-alien" className="patch" src="images/trans.webp" alt="" />
                     <div className="upcoming-card">
+                        <img className="flyer-img" src="/images/summer2.webp" height={"700px"} alt="" />
+                    </div>
+                    <h2 className="upcoming-title">COME FOR THE MUSIC, STAY FOR THE BEV <br />☆ <br />TAKE A SIP WITH DISCO DUCK COFFEE AT SUNBURNT SESSION II</h2>
+                    <img id="discoduck" src="images/trans.webp" alt="" />
+                    <div className="insta-embed">
+                        <div style={{ display: 'flex', justifyContent: 'center' }}>
+                            <InstagramEmbed url="https://www.instagram.com/p/DM8E8aIxhtB/?img_index=1" width={328}/>
+                        </div>
                     </div>
                     <img id="home-anteaters" className="patch" src="images/trans.webp" alt="" />
                     <div className="apps-closed">
@@ -66,6 +71,10 @@ function Body(){
 
 /*
 <h1 className="upcoming-title">UPCOMING:</h1> 
+
+<p className="dmphotos">If you have any photos or videos from SUNBURNT SESSION I, send us an email at
+                        404delsol@gmail.com, or DM us on <a href="https://www.instagram.com/404delsol.uci/" target="blank">instagram!</a> Be sure to include your name so we can credit you!
+ </p>
 
 <div className="carousel-container">
                 
