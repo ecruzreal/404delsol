@@ -41,6 +41,11 @@ const mediasets = {
         "DSCN5476.jpeg", "DSCN5477.jpeg", "DSCN5478.jpeg", "DSCN5479.jpeg",
         "DSCN5480.jpeg", "DSCN5481.jpeg", "DSCN5482.jpeg", "DSCN5496.jpeg",
         "DSCN5498.jpeg"
+    ],
+    "SUNBURNT-SESSIONS": [
+        "IMG_2942.webp", "IMG_3048.webp", "IMG_3064.webp", "IMG_3098.webp",
+        "IMG_3102.webp", "IMG_3138.webp", "IMG_3206.webp", "IMG_3214.webp",
+        "IMG_3234.webp", "IMG_3245.webp", "IMG_3249.webp", "IMG_3265.webp"
     ]
 };
 
@@ -61,6 +66,7 @@ function Archive() {
                     <Link className="archive-link" to="/archive/show-4">SHOW 4</Link>
                     <Link className="archive-link" to="/archive/show-5">SHOW 5</Link>
                     <Link className="archive-link" to="/archive/show-6">SHOW 6</Link>
+                    <Link className="archive-link" to="/archive/SUNBURNT-SESSIONS">SUNBURNT SESSIONS 25</Link>
                 </nav>
                 <h2 className="archive-header">{archiveID.replace('-', ' ').replace('show', 'SHOW')} ARCHIVE</h2>
                 <div className={media.length > 0 ? "archive-grid" : "archive-fallback"}>

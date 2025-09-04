@@ -9,6 +9,17 @@
     padding-bottom: 4rem;
 }
 
+#kuci-patch{
+    position: absolute;
+    z-index: -1;
+    width: 255px;
+    height: 250px;
+    background: url(/images/patchsheet1.webp) 0 -750px;
+    right: 10%;
+    top: 40%;
+    rotate: 10deg;
+}
+
 #home-skull{
     position: absolute;
     z-index: -1;
@@ -26,7 +37,7 @@
     width: 250px;
     height: 255px;
     background: url(/images/patchsheet1.webp) -250px 0;
-    top: 25%;
+    top: 20%;
     right: 10%;
     rotate: 8deg;
 }
@@ -574,6 +585,14 @@
         background-position: -160px 0;
         height: 175px;
         width: 170px;
+    }
+
+    #kuci-patch{
+        background-size: 650px 650px;
+        background-position: 0 -480px;
+        height: 175px;
+        width: 170px;
+        top: 760px;
     }
 
     #home-anteaters{
