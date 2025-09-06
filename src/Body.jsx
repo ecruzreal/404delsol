@@ -38,8 +38,8 @@ function Body(){
                     <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1 className="upcoming-title">404 x KUCI  <br /> LIVE RADIO SESSIONS <br />
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScTLjIh81juFgZFoeRTh7Ej1uYiTmVLsQEb6hlMdPQAxNe-zQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacl6R-YQCwjz15Cy9mO7Jelv-n1FnqJhtrZRLzIFhrS0isRTV_5m4f-267ivQ_aem_NsRsXo3CvKvWPq0gKCeQag" target="_blank">CLICK HERE</a> TO APPLY!</h1> 
+                    <h1 className="upcoming-title">404 x KUCI  <br /> LIVE RADIO SESSIONS <br /></h1>
+                    <h2>APPLICATIONS ARE CLOSED <br /> WE'LL SEE YOU IN THE FALL, STAY TUNED!</h2>
                     <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
                     <div className="upcoming-card">
                         <img className="flyer-img" src="/images/KUCI-flyer.webp" height={"700px"} alt="" />
