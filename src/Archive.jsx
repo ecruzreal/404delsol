@@ -60,13 +60,29 @@ function Archive() {
         <div className="archive-body">
             <div className="archive-content">
                 <nav className="archive-nav">
-                    <Link className="archive-link" to="/archive/show-1">SHOW 1</Link>
-                    <Link className="archive-link" to="/archive/show-2">SHOW 2</Link>
-                    <Link className="archive-link" to="/archive/show-3">SHOW 3</Link>
-                    <Link className="archive-link" to="/archive/show-4">SHOW 4</Link>
-                    <Link className="archive-link" to="/archive/show-5">SHOW 5</Link>
-                    <Link className="archive-link" to="/archive/show-6">SHOW 6</Link>
-                    <Link className="archive-link" to="/archive/SUNBURNT-SESSIONS">SUNBURNT SESSIONS 25</Link>
+                    <ul className="list-arch">
+                        <li>
+                        <Link className="archive-link" to="/archive/show-1">SHOW 1</Link>
+                        </li>
+                        <li>
+                        <Link className="archive-link" to="/archive/show-2">SHOW 2</Link>
+                        </li>
+                        <li>
+                        <Link className="archive-link" to="/archive/show-3">SHOW 3</Link>
+                        </li>
+                        <li>
+                        <Link className="archive-link" to="/archive/show-4">SHOW 4</Link>
+                        </li>
+                        <li>
+                        <Link className="archive-link" to="/archive/show-5">SHOW 5</Link>
+                        </li>
+                        <li>
+                        <Link className="archive-link" to="/archive/show-6">SHOW 6</Link>
+                        </li>
+                        <li>
+                        <Link className="archive-link" to="/archive/SUNBURNT-SESSIONS">SUNBURNT SESSIONS 25</Link>
+                        </li>
+                    </ul>
                 </nav>
                 <h2 className="archive-header">{archiveID.replace('-', ' ').replace('show', 'SHOW')} ARCHIVE</h2>
                 <div className={media.length > 0 ? "archive-grid" : "archive-fallback"}>

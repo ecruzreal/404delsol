@@ -7,6 +7,10 @@
     font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
 }
 
+.contact-header{
+    text-shadow: 3px 1px 5px black;
+}
+
 
 #contact-alien{
     position: absolute;
