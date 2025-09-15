@@ -93,7 +93,7 @@ function ContactForm() {
         <div className="formContainer" id="form-container">
             <p className="form-info">This form is if you are a current UCI Student interested in performing at 404 Del Sol. We are a DIY venue with a passion for providing <br /> a space for artists to perform and cultivate a supportive music-loving community. For equipment, we can provide a PA system, mics, mixer, etc. Each act will be given roughly 30 minutes (6-8 songs). It's okay to be slightly over or under but please do not abuse this freedom.
                     DISCLAIMER: THE "VENUE" WILL LIKELY BE OUTDOORS. 
-                    If you have any urgent questions please DM @404delsol.uci on Instagram! <br />IMPORTANT: APPLICATIONS CLOSE MAY 25th!</p>
+                    If you have any urgent questions please DM @404delsol.uci on Instagram! <br />IMPORTANT: APPLICATIONS CLOSE OCTOBER 5th!</p>
             <form id="contact-form" method="POST" onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
                 <div className="first-section">
                     <div className="form-group">
@@ -128,7 +128,7 @@ function ContactForm() {
                 </div>
                 
                 <div className="venue-terms">
-                    <h3>IMPORTANT: The venue will no longer be at an ACC apartment but at an off-campus location that is around a 30 minute drive from UCI.</h3>
+                    <h3>IMPORTANT: The venue will no longer be at an ACC apartment but at an off-campus location that is around a 20 minute drive from UCI.</h3>
                     <div className="form-group venue-agreement">
                         <input type="checkbox" className="form-control" name="venue" required />
                         <label htmlFor="venue">I understand</label>
@@ -245,7 +245,7 @@ function ContactForm() {
                     </div>
 
                     <div className="form-group dont-flake">
-                        <h4>Show 6 is on MAY 31st, 2025 (Make sure you are 100% available, if you flake you will be ineligible to play at any future events)</h4>
+                        <h4>Show 7 is on OCTOBER 11th, 2025 (Make sure you are 100% available, if you flake you will be ineligible to play at any future events)</h4>
                         <div>
                             <input className="form-control" type="checkbox" name="show-up" required />
                             <label htmlFor="show-up">I Understand</label>
