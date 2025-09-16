@@ -81,7 +81,7 @@ export default async function handler(req, res) {
     );
     */
     try{
-        await axios.post('https://script.google.com/macros/s/AKfycbz3RSB1OnXDJDUysqcjuu-nY4wAi83pDPk6oWuBF2rlpMNYf8cWCMzYhOSvWygTaYzw/exec', req.body);
+        await axios.post('https://script.google.com/macros/s/AKfycbyhhhdWipH7VcOho6xqkjm9e5H3iSETfVr9LWUMG3tNuBG4qAWbNkolick43SZeZtyL/exec', req.body);
     } catch (err){
         console.error('Failed to write to google sheets: ', err);
     }

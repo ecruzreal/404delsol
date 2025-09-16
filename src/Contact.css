@@ -63,7 +63,7 @@ a{
 }
 
 .contact-basic{
-    background-color: #fff4b3;
+    background-color: #c8dffb;
     color: black;
     padding: 1rem;
     border-radius: 12px;
@@ -78,7 +78,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff4b3;
+    background-color: #c8dffb;
     padding: 2rem;
     border-radius: 12px;
     border: 2px solid black;
@@ -95,10 +95,10 @@ a{
 }
 
 .pre-form{
-    color: black;
-    background-color: #fff4b3;
-    border: 2px solid black;
     display: none;
+    color: black;
+    background-color: #c8dffb;
+    border: 2px solid black;
 }
 
 .apply-link{
