@@ -9,6 +9,17 @@
     padding-bottom: 4rem;
 }
 
+#home-pumpkin{
+    position: absolute;
+    z-index: -1;
+    width: 255px;
+    height: 250px;
+    background: url(/images/patchsheet1.webp) 500px -755px;
+    right: 10%;
+    top: 30%;
+    rotate: 10deg;
+}
+
 #kuci-patch{
     position: absolute;
     z-index: -1;
@@ -282,7 +293,7 @@
 }
 
 .upcoming-card{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -550,7 +561,6 @@
     font-size: 2rem;
     display: flex;
     flex-direction: column;
-    display: none;
 }
 
 .apps-closed{
@@ -580,7 +590,7 @@
 
     #discoduck{
         background-size: 650px 650px;
-        height: 175px;
+        height: 139px;
         width: 175px;
         background-position: -320px -350px;
     }
@@ -603,7 +613,7 @@
         background-position: 0 -480px;
         height: 175px;
         width: 170px;
-        top: 940px;
+        top: 1200px;
     }
 
     #home-anteaters{
@@ -611,6 +621,13 @@
         background-position: -160px -350px;
         height: 175px;
         width: 175px;
+    }
+
+    #home-pumpkin{
+        background-size: 650px 650px;
+        background-position: -300px -488px;
+        height: 170px;
+        width: 190px;
     }
 
     #home-greenstar{
@@ -725,6 +742,10 @@
     
     #home-skull{
         top: -3%;
+    }
+
+    #kuci-patch{
+        top: 1000px;
     }
 
     #home-greenstar{
