@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const mediasets = {
     "show-1": [
-        "show1flyer.jpg","IMG_6150.jpeg", "IMG_6151.jpeg", "IMG_6152.jpeg",
+        "show1flyer.jpg","IMG_4631.webp","IMG_6568.webp","IMG_4630.webp","IMG_6150.jpeg", "IMG_6151.jpeg", "IMG_6152.jpeg",
          "IMG_6153.jpeg", "IMG_6154.jpeg", "IMG_6155.jpeg",
           "IMG_6156.jpeg", "IMG_6157.jpeg", "IMG_6158.jpeg"
     ],
