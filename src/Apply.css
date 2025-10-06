@@ -1,0 +1,15 @@
+.closed-message{
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: 45rem;
+}
+
+@media(max-width: 1000px){
+    .closed-message{
+        font-size: 2rem;
+    }
+}

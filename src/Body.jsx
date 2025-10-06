@@ -40,8 +40,7 @@ function Body(){
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
                     <h1 className="upcoming-title">SHOW 7 - OCTOBER 11th <br /></h1>
                     <div className="apply-now">
-                        <Link className="apply-main-link" to={'/apply'} target="_blank">APPLY NOW!</Link>
-                        <span>APPLICATIONS CLOSE OCTOBER 5th</span>
+                        <span>APPLICATIONS HAVE NOW CLOSED, WE'LL SEE YOU SOON!</span>
                     </div>
                     <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
                     <img id="home-pumpkin" className="patch" src="/images/trans.webp" alt="" />
