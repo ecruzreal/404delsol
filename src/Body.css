@@ -16,7 +16,7 @@
     height: 250px;
     background: url(/images/patchsheet1.webp) 500px -755px;
     right: 10%;
-    top: 30%;
+    top: 25%;
     rotate: 10deg;
 }
 
@@ -48,7 +48,7 @@
     width: 250px;
     height: 255px;
     background: url(/images/patchsheet1.webp) -250px 0;
-    top: 20%;
+    top: 6%;
     right: 10%;
     rotate: 8deg;
 }
@@ -73,6 +73,7 @@
     top: 5%;
     right: 10%;
     rotate: -15deg;
+    display: none;
 }
 
 #home-heart{
@@ -293,12 +294,12 @@
 }
 
 .upcoming-card{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: white;
+    background-color: rgb(224, 127, 42);
     padding: 1rem;
     border-radius: 12px;
 }
@@ -524,7 +525,7 @@
     position: absolute;
     z-index: -1;
     width: 250px;
-    height: 250px;
+    height: 245px;
     background: url(/images/patchsheet1.webp) -500px -515px;
     left: 10%;
     top: 50%;

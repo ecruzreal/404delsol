@@ -38,14 +38,11 @@ function Body(){
                     <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1 className="upcoming-title">SHOW 7 - OCTOBER 11th <br /></h1>
-                    <div className="apply-now">
-                        <span>APPLICATIONS HAVE NOW CLOSED, WE'LL SEE YOU SOON!</span>
-                    </div>
+                    <h1 className="upcoming-title"> SPOOKY SHOW 7 - OCTOBER 11TH <br /></h1>
                     <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
                     <img id="home-pumpkin" className="patch" src="/images/trans.webp" alt="" />
                     <div className="upcoming-card">
-                        <img className="flyer-img" src="/images/show7apps.jpeg" height={"700px"} alt="" />
+                        <img className="flyer-img" src="/images/show7.webp" height={"700px"} alt="" />
                     </div>
                     <h1 className="upcoming-title">☆ <br /> <br /> 404 x KUCI <br /> LIVE PERFORMANCES THIS FALL</h1>
                     <img id="kuci-patch" src="/images/trans.webp" className="patch" alt="" />
