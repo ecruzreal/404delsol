@@ -95,7 +95,8 @@ a{
 }
 
 .pre-form{
-    display: none;
+    margin-top: 3rem;
+    display: flex;
     color: black;
     background-color: #c8dffb;
     border: 2px solid black;
