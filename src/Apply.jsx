@@ -6,7 +6,7 @@ import './Apply.css'
 function Apply(){
     return (
         <div className="apply-body">
-            <h1 className="closed-message">APPLICATIONS HAVE NOW CLOSED, WE'LL SEE YOU SOON!</h1>
+            <ContactForm></ContactForm>
         </div>
     )
 };

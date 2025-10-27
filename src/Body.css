@@ -320,10 +320,16 @@
 
 .archive-nav{
     display: flex;
+    width: 15rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     text-shadow: 3px 1px 5px rgba(34, 34, 34, 0.517);
+    background-color: rgb(48, 37, 18);
+    padding: .6rem;
+    font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
+    border-radius: 8px;
 }
 
 .list-arch{
@@ -367,7 +373,7 @@
 }
 
 .archive-img{
-    height: 25rem;
+    height: 20rem;
     outline: 1.5px dashed red;
 }
 
@@ -712,7 +718,7 @@
     }
 
     .archive-img{
-        height: 15rem;
+        height: 12rem;
     }
 
     .spotify-info{
@@ -795,7 +801,7 @@
     }
 
     .archive-img{
-        height: 12rem;
+        height: 10rem;
     }
 
     .archive-body{

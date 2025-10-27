@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const mediasets = {
@@ -46,6 +46,10 @@ const mediasets = {
         "IMG_2942.webp", "IMG_3048.webp", "IMG_3064.webp", "IMG_3098.webp",
         "IMG_3102.webp", "IMG_3138.webp", "IMG_3206.webp", "IMG_3214.webp",
         "IMG_3234.webp", "IMG_3245.webp", "IMG_3249.webp", "IMG_3265.webp"
+    ],
+    "show-7":[
+       "baker.jpg", "bass darker.jpg", "chain.jpg", "daniboardfin.jpg", "discfin.jpg",
+       "guitarfimal.jpg", "kiwifin.jpg", "matchafin.jpg", "pelimare.jpg", "trixfinl.jpg"
     ]
 };
 
@@ -55,49 +59,60 @@ function Archive() {
     const {archiveID} = useParams();
     const media = mediasets[archiveID] || [];
 
+    const navigate = useNavigate();
+    const handleSelectChange = (event) => {
+        const selectedUrl = event.target.value;
+        if (selectedUrl){
+            navigate(selectedUrl)
+        }
+    }
+
 
     return (
         <div className="archive-body">
             <div className="archive-content">
-                <nav className="archive-nav">
-                    <ul className="list-arch">
-                        <li>
-                        <Link className="archive-link" to="/archive/show-1">SHOW 1</Link>
-                        </li>
-                        <li>
-                        <Link className="archive-link" to="/archive/show-2">SHOW 2</Link>
-                        </li>
-                        <li>
-                        <Link className="archive-link" to="/archive/show-3">SHOW 3</Link>
-                        </li>
-                        <li>
-                        <Link className="archive-link" to="/archive/show-4">SHOW 4</Link>
-                        </li>
-                        <li>
-                        <Link className="archive-link" to="/archive/show-5">SHOW 5</Link>
-                        </li>
-                        <li>
-                        <Link className="archive-link" to="/archive/show-6">SHOW 6</Link>
-                        </li>
-                        <li>
-                        <Link className="archive-link" to="/archive/SUNBURNT-SESSIONS">SUNBURNT SESSIONS 25</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <h2 className="archive-header">{archiveID.replace('-', ' ').replace('show', 'SHOW')} ARCHIVE</h2>
-                <div className={media.length > 0 ? "archive-grid" : "archive-fallback"}>
-                    {media.length > 0 ? (
-                        media.map((src, i) => (
-                        <div key={i} className="archive-img-wrapper">
-                            <img src={`/images/${src}`} className="archive-img" alt={`Media ${i}`} />
-                        </div>
-                        ))
-                        ) : (
-                        <div className="fallback">
-                            <img src={fallbackimage} className="archive-img" alt="No media available" />
-                            <p className="fallback-text">Nothing to see here</p>
-                        </div>
-                    )}
+                <select name="arch-drop" className="archive-nav" onChange={handleSelectChange}>
+                    <option value="/archive/show-1">
+                        SHOW 1
+                    </option>
+                    <option value="/archive/show-2">
+                        SHOW 2
+                    </option>
+                    <option value="/archive/show-3">
+                        SHOW 3
+                    </option>
+                    <option value="/archive/show-4">
+                        SHOW 4
+                    </option>
+                    <option value="/archive/show-5">
+                        SHOW 5
+                    </option>
+                    <option value="/archive/show-6">
+                        SHOW 6
+                    </option>
+                    <option value="/archive/SUNBURNT-SESSIONS">
+                        SUNBURNT SESSIONS 25
+                    </option>
+                    <option value="/archive/show-7">
+                        SHOW 7
+                    </option>
+                </select>
+                <div className="archive-main">
+                    <h2 className="archive-header">{archiveID.replace('-', ' ').replace('show', 'SHOW')} ARCHIVE</h2>
+                    <div className={media.length > 0 ? "archive-grid" : "archive-fallback"}>
+                        {media.length > 0 ? (
+                            media.map((src, i) => (
+                            <div key={i} className="archive-img-wrapper">
+                                <img src={`/images/${src}`} className="archive-img" alt={`Media ${i}`} />
+                            </div>
+                            ))
+                            ) : (
+                            <div className="fallback">
+                                <img src={fallbackimage} className="archive-img" alt="No media available" />
+                                <p className="fallback-text">Nothing to see here</p>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
