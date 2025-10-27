@@ -46,7 +46,7 @@ function Body(){
                     <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
                     <img id="home-pumpkin" className="patch" src="/images/trans.webp" alt="" />
                     <div className="upcoming-card">
-                        <img className="flyer-img" src="/images/show7.webp" height={"700px"} alt="" />
+                        <img className="flyer-img" src="/images/show8flyer.jpg" height={"700px"} alt="" />
                     </div>
                     <img id="kuci-patch" src="/images/trans.webp" className="patch" alt="" />
                     <img id="discoduck" src="images/trans.webp" alt="" />
