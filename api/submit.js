@@ -14,6 +14,9 @@ export default async function handler(req, res) {
       video_link, message
     } = req.body;
 
+    console.log('Email user:', process.env.EMAIL_USER ? 'Set' : 'NOT SET');
+    console.log('Email pass:', process.env.EMAIL_PASS ? 'Set' : 'NOT SET');
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       host: "smtp.gmail.com",
@@ -23,6 +26,10 @@ export default async function handler(req, res) {
         pass: process.env.EMAIL_PASS
       }
     });
+
+    console.log('Testing email connection...');
+    await transporter.verify();
+    console.log('Connection verified!');
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
@@ -88,6 +95,12 @@ export default async function handler(req, res) {
 
     res.status(200).json({ message: 'Success' });
   } catch (error) {
+
+    console.error('Full error object:', error);
+    console.error('Error message:', error.message);
+    console.error('Error code:', error.code);
+    console.error('Error response:', error.response);
+
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }

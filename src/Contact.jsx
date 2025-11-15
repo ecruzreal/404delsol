@@ -10,9 +10,6 @@ function Contact() {
             <img id="contact-bluestar" src="/images/trans.webp" alt="" />
             <img id="contact-anteaters" src="/images/trans.webp" alt="" />
             <div className="contact-general">
-                <div className="pre-form">
-                    <h2>Interested in performing? <Link className="apply-link" to={'/apply'}>Apply here!</Link></h2>
-                </div>
                 <h1 className="contact-header">GOT QUESTIONS? CONTACT US!</h1>
                 <div  className="contact-us">
                     <p className="contact-basic">Send us a DM on <a href="https://www.instagram.com/404delsol.uci/">Instagram</a>, or send us an email!</p>
