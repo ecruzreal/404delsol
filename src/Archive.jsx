@@ -50,6 +50,9 @@ const mediasets = {
     "show-7":[
        "baker.jpg", "bass darker.jpg", "chain.jpg", "daniboardfin.jpg", "discfin.jpg",
        "guitarfimal.jpg", "kiwifin.jpg", "matchafin.jpg", "pelimare.jpg", "trixfinl.jpg"
+    ],
+    "show-8":[
+
     ]
 };
 
@@ -96,6 +99,9 @@ function Archive() {
                     <option value="/archive/show-7">
                         SHOW 7
                     </option>
+                    <option value="/archive/show-8">
+                        SHOW 8
+                    </option>
                 </select>
                 <div className="archive-main">
                     <h2 className="archive-header">{archiveID.replace('-', ' ').replace('show', 'SHOW')} ARCHIVE</h2>
@@ -108,8 +114,8 @@ function Archive() {
                             ))
                             ) : (
                             <div className="fallback">
-                                <img src={fallbackimage} className="archive-img" alt="No media available" />
-                                <p className="fallback-text">Nothing to see here</p>
+                                <img src={fallbackimage} className="archive-img" alt="No media available" style={{outline: `none`}} />
+                                <p className="fallback-text">Nothing to see here yet</p>
                             </div>
                         )}
                     </div>

@@ -29,7 +29,7 @@ function Header(){
             <div className="header-top">
                 <div className="logo-text">
                   <img src={logo} className="logo" alt="Logo" />
-                    404 Del Sol
+                    <Link className="homelink" to={'/'}>404 Del Sol</Link>
                 </div>
                 <span id="menu-toggle" className="menu-btn"> ☰ MENU</span>
                 <nav id="navigation" className="nav-buttons">

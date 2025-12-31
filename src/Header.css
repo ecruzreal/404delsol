@@ -39,6 +39,11 @@
     transition: .2s;
 }
 
+.homelink{
+    color: white;
+    text-decoration: none;
+}
+
 .nav-btn:visited{
     color: white;
 }

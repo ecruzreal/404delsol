@@ -91,9 +91,9 @@ function ContactForm() {
 
     return (
         <div className="formContainer" id="form-container">
-            <p className="form-info">This form is if you are a current UCI Student interested in performing at 404 Del Sol. We are a DIY venue with a passion for providing <br /> a space for artists to perform and cultivate a supportive music-loving community. For equipment, we can provide a PA system, mics, mixer, etc. Each act will be given roughly 30 minutes (6-8 songs). It's okay to be slightly over or under but please do not abuse this freedom.
+            <p className="form-info">This form is if you are a current UCI Student interested in performing at 404 Del Sol. We are a DIY venue with a passion for providing a space for artists to perform and cultivate a supportive music-loving community. For equipment, we can provide a PA system, mics, mixer, etc. Each act will be given roughly 30 minutes (6-8 songs). It's okay to be slightly over or under but please do not abuse this freedom.
                     DISCLAIMER: THE "VENUE" WILL LIKELY BE OUTDOORS. 
-                    If you have any urgent questions please DM @404delsol.uci on Instagram! <br /> <strong>IMPORTANT: APPLICATIONS CLOSE NOVEMBER 14th!</strong></p>
+                    If you have any urgent questions please DM @404delsol.uci on Instagram! <br /> <strong>IMPORTANT: APPLICATIONS CLOSE JANUARY 13th!</strong></p>
             <form id="contact-form" method="POST" onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
                 <div className="first-section">
                     <div className="form-group">
@@ -245,7 +245,7 @@ function ContactForm() {
                     </div>
 
                     <div className="form-group dont-flake">
-                        <h4>Show 8 is on NOVEMBER 22nd, 2025 (Make sure you are 100% available, if you flake you will be ineligible to play at any future events)</h4>
+                        <h4>Show 9 is on JANUARY 24th, 2026 (Make sure you are 100% available, if you flake you will be ineligible to play at any future events)</h4>
                         <div>
                             <input className="form-control" type="checkbox" name="show-up" required />
                             <label htmlFor="show-up">I Understand</label>
@@ -253,7 +253,7 @@ function ContactForm() {
                     </div>
 
                 </div>
-                <div className="form-group comments">
+                <div className="form-group comments maincomm">
                     <label htmlFor="message">Questions, Comments, Concerns?</label>
                     <textarea id="apply-message" className="form-control for-area" name="message" placeholder="Comments..." onChange={handleChange} rows="5" value={formData.message} required />
                 </div>

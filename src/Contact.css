@@ -11,6 +11,10 @@
     text-shadow: 3px 1px 5px black;
 }
 
+.aemail{
+    color: white;
+}
+
 
 #contact-alien{
     position: absolute;
@@ -63,7 +67,6 @@ a{
 }
 
 .contact-basic{
-    background-color: #c8dffb;
     color: black;
     padding: 1rem;
     border-radius: 12px;
@@ -78,7 +81,8 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #c8dffb;
+    background: #22C1C3;
+    background: linear-gradient(31deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     padding: 2rem;
     border-radius: 12px;
     border: 2px solid black;
