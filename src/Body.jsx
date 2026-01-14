@@ -38,10 +38,7 @@ function Body(){
                     <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1 className="upcoming-title">SHOW 9 <br /> <Link to={'/apply'}> APPLY TODAY!</Link></h1>
-                    <div className="upcoming-card">
-                        <img className="upcoming-img" src="images/9flyer.webp" alt="" />
-                    </div>
+                    <h1 className="upcoming-title">SHOW 9 <br /> APPLICATIONS NOW CLOSED, WE'LL SEE YOU SOON</h1>
                     <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
                     <img id="kuci-patch" src="/images/trans.webp" className="patch" alt="" />
                     <img id="discoduck" src="images/trans.webp" alt="" />
