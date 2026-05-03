@@ -90,7 +90,7 @@ export default async function handler(req, res) {
                                   <tr>
                                   <td>
                                       <h2 style="color: #333333;"> ${name} - Thanks for applying to perform at 404 Del Sol!</h2>
-                                      <h3> style="color: #333333;"> We'll be in touch! Here's a copy of your responses:</h3>
+                                      <h3 style="color: #333333;"> We'll be in touch! Here's a copy of your responses:</h3>
                                       <p><strong>Band/Artist Name:</strong> ${name}</p>
                                       <p><strong>UCI Email:</strong> ${email}</p>
                                       <p><strong>Student ID:</strong> ${studentID}</p>
