@@ -73,6 +73,54 @@ export default async function handler(req, res) {
                     </html>`
     });
 
+    try{
+
+      await transporter.sendMail({
+        from: process.env.EMAIL_USER,
+        to: email,
+        subject: `404 Del Sol Application`,
+        replyTo: email,
+        html: `<!DOCTYPE html>
+                      <html>
+                      <body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                              <td align="center">
+                              <table width="600" cellpadding="20" cellspacing="0" border="0" style="background-color: #ffffff; border-radius: 8px;">
+                                  <tr>
+                                  <td>
+                                      <h2 style="color: #333333;"> ${name} - Thanks for applying to perform at 404 Del Sol!</h2>
+                                      <h3> style="color: #333333;"> We'll be in touch! Here's a copy of your responses:</h3>
+                                      <p><strong>Band/Artist Name:</strong> ${name}</p>
+                                      <p><strong>UCI Email:</strong> ${email}</p>
+                                      <p><strong>Student ID:</strong> ${studentID}</p>
+                                      <p><strong>Socials:</strong> ${socials}</p>
+                                      <p><strong>Names and Instruments:</strong> ${names_instruments}</p>
+                                      <p><strong>Main Genre:</strong> ${genre}</p>
+                                      <p><strong>Songs:</strong> ${songs}</p>
+                                      <p><strong>Bringing Equipment:</strong> ${bringing.join(", ")} <strong>Other:<strong /> ${bringing_other}</p>
+                                      <p><strong>Needs Equipment:</strong> ${needs.join(", ")} <strong>Other:<strong /> ${needs_other} </p>
+                                      <p><strong>Video Link:</strong> ${video_link}</p>
+                                      <p><strong>Comments:</strong> ${message}</p>
+
+                                      <hr style="border: none; border-top: 1px solid #dddddd; margin: 20px 0;" />
+
+                                      <p style="font-size: 12px; color: #888888;">
+                                      This message was sent via the 404 del Sol submission form.
+                                      </p>
+                                  </td>
+                                  </tr>
+                              </table>
+                              </td>
+                          </tr>
+                          </table>
+                      </body>
+                      </html>`
+      });
+    } catch (error){
+      console.log(error)
+    }
+
     /*
     const db = await mysql.createConnection({
       host: 'localhost',

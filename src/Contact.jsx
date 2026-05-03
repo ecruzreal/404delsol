@@ -9,6 +9,9 @@ function Contact() {
             <img id="contact-alien" src="/images/trans.webp" alt="" />
             <img id="contact-bluestar" src="/images/trans.webp" alt="" />
             <img id="contact-anteaters" src="/images/trans.webp" alt="" />
+            <div className="apply-contact">
+                <h1 className="contact-header"><br />INTERESTED IN PERFORMING? APPLY <Link to={'/apply'}>HERE</Link><br /> <br />☆ ☆ ☆</h1>
+            </div>
             <div className="contact-general">
                 <h1 className="contact-header">GOT QUESTIONS? CONTACT US!</h1>
                 <div  className="contact-us">

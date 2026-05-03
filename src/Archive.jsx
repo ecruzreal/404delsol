@@ -53,6 +53,9 @@ const mediasets = {
     ],
     "show-8":[
 
+    ],
+    "show-9":[
+        "show9_1.png", "show9_2.png"
     ]
 };
 
@@ -101,6 +104,9 @@ function Archive() {
                     </option>
                     <option value="/archive/show-8">
                         SHOW 8
+                    </option>
+                    <option value="/archive/show-9">
+                        SHOW 9
                     </option>
                 </select>
                 <div className="archive-main">
