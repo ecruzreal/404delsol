@@ -38,7 +38,13 @@ function Body(){
                     <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1 className="upcoming-title">SHOW 9 <br /> APPLICATIONS NOW CLOSED, WE'LL SEE YOU SOON</h1>
+                    <h1>
+                        GENERAL APPLICATIONS FOR SHOWS ON MAY 29TH AND JUNE 2ND
+                    </h1>
+                    <div className="apply-now">
+                        <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
+                        <span>APPLICATIONS CLOSE MAY 18TH</span>
+                    </div>
                     <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
                     <img id="kuci-patch" src="/images/trans.webp" className="patch" alt="" />
                     <img id="discoduck" src="images/trans.webp" alt="" />
