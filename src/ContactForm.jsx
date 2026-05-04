@@ -127,13 +127,14 @@ function ContactForm() {
                     </div>
                 </div>
                 
-                <div className="venue-terms">
+               {/* <div className="venue-terms">
                     <h3>IMPORTANT: The venue will no longer be at an ACC apartment but at an off-campus location that is around a 20 minute drive from UCI.</h3>
                     <div className="form-group venue-agreement">
                         <input type="checkbox" className="form-control" name="venue" required />
                         <label htmlFor="venue">I understand</label>
                     </div>
                 </div>
+                */}
         
                 <div className="form-group">
                     <div className="instrument-checks">

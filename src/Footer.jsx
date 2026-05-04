@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <div className="footer-container">
-            Copyright 404DelSol 2025 | All Rights Reserved | Site by Emmanuel Cruz
+            Copyright 404DelSol 2026 | All Rights Reserved | Site by Emmanuel Cruz
         </div>
     )
 };
