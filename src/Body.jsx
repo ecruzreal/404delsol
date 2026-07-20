@@ -39,7 +39,7 @@ function Body(){
                     <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
                     <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
                     <h1>
-                        APPLICATIONS HAVE CLOSED <br /> SEE YOU SOON!
+                        THANKS FOR ROCKING WITH US <br /> <br /> 404 FOREVER
                     </h1>
                     {/*
                     <div className="apply-now">
