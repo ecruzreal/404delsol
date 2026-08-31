@@ -36,7 +36,7 @@ function Body(){
             <div className="body-container">
                 
                 <div className="apps-closed">
-                        <img id="sunp" src='src/404logo.png' alt="" />
+                        <img id="sunp" src={logo} alt="" />
                         <span>under construction, mind the dust</span>
                 </div>
                 <div className="upcoming-container">
