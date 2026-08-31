@@ -34,35 +34,52 @@ function Body(){
     return (
         <div className="body-all">
             <div className="body-container">
+                
+                <div className="apps-closed">
+                        <img id="sunp" src='src/404logo.png' alt="" />
+                        <span>under construction, mind the dust</span>
+                </div>
                 <div className="upcoming-container">
-                    <img id="home-skull" className="patch" src="images/trans.webp" alt="" />
-                    <img id="home-greenstar" className="patch" src="images/trans.webp" alt="" />
-                    <img id="uppatch" src="/images/bluepatchfinal.webp" alt="" height={'300px'}/>
-                    <h1>
-                        THANKS FOR ROCKING WITH US <br /> <br /> 404 FOREVER
-                    </h1>
+                    
+                    <div class="window-card">
+                    <div class="window-card__titlebar">
+                        <div class="window-card__dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="window-card__title">404.txt</div>
+                    </div>
+                    <div class="window-card__body">
+                        <h1>Thanks for rocking with us <br /> 404 forever!</h1>
+                    </div>
+                    </div>
                     {/*
                     <div className="apply-now">
                         <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
                         <span>APPLICATIONS CLOSE MAY 18TH</span>
                     </div>
-                    */}
-                    <img id="home-alien" className="patch" src="/images/trans.webp" alt="" />
-                    <img id="kuci-patch" src="/images/trans.webp" className="patch" alt="" />
-                    <img id="discoduck" src="images/trans.webp" alt="" />
-                    <img id="home-anteaters" className="patch" src="images/trans.webp" alt="" />
+                    
+                    
                     <div className="apps-closed">
-                        <img id="sunp" src='images/sunpatch.webp' alt="" />
+                        <img id="sunp" src='images/petermic.png' alt="" />
+                        <span>under construction, mind the dust</span>
                     </div>
+                    */}
                 </div>
-                <img id="home-heart" className="patch" src="images/trans.webp" alt="" />
-                <img id="home-mic" className="patch" src="images/trans.webp" alt="" />
                 <h1 className="spotify-header">OUR STAGE, YOUR SOUNDTRACKS</h1>
                 <div className="spotify-container">
-                    <p className="spotify-info"> <br />
-                    These are the bands that brought the house down, and now they're in your headphones. Hit play, and explore the talent
-                    who's performed at 404 Del Sol!</p>
-                    <iframe className="spotify-playlist" src="https://open.spotify.com/embed/playlist/27c85JpJNg0jAAHE0XPwpF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div class="window-card">
+                    <div class="window-card__titlebar">
+                        <div class="window-card__dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="window-card__title">artists.txt</div>
+                    </div>
+                    <div class="window-card__body">
+                        <h3>Featured Artists</h3>
+                        <p>These are the bands that brought the house down, and now they're in your headphones. Hit play, and explore the talent who's performed at 404 Del Sol!</p>
+                    </div>
+                </div>
+                    <iframe className="spotify-playlist" src="https://open.spotify.com/embed/playlist/27c85JpJNg0jAAHE0XPwpF?utm_source=generator&theme=0&si=c241559c05324d13" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
