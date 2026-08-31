@@ -1,3 +1,16 @@
+:root{
+    --window-bg: #ffffff;
+    --window-border: #d8d8d8;
+    --titlebar-bg: #f0f0f0;
+    --text-color: #2a2a2a;
+    --muted-text: #444444;
+    --dot-red: #ff5f57;
+    --dot-yellow: #febc2e;
+    --dot-green: #28c840;
+    --radius: 10px;
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
 .body-container{
     display: flex;
     flex-direction: column;
@@ -327,7 +340,7 @@
     align-items: center;
     gap: 5rem;
     text-shadow: 3px 1px 5px rgba(34, 34, 34, 0.517);
-    background-color: rgb(48, 37, 18);
+    background-color: rgb(46, 66, 45);
     padding: .6rem;
     font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
     border-radius: 8px;
@@ -379,7 +392,7 @@
 
 .archive-img{
     height: 20rem;
-    outline: 1.5px dashed red;
+    outline: 1.5px solid black;
 }
 
 .archive-link{
@@ -565,7 +578,7 @@
 
 .spotify-playlist{
     border-radius: 12px;
-    box-shadow: 1px 2px 7px rgb(55, 31, 31);
+    box-shadow: 1px 2px 7px rgb(132, 175, 137);
     height: 25rem;
 }
 
@@ -593,9 +606,82 @@
     font-family: "Special Gothic Expanded One", Arial, Helvetica, sans-serif;
 }
 
+/*--windows---*/
+
+.window-card {
+    width: 100%;
+    max-width: 50%;
+    background: var(--window-bg);
+    border: 1px solid var(--window-border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    text-shadow: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+ 
+.window-card__titlebar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 0.85rem;
+    background: var(--titlebar-bg);
+    border-bottom: 1px solid var(--window-border);
+}
+
+.window-card__dots {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.window-card__dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.window-card__dots span:nth-child(1) { background: var(--dot-red); }
+.window-card__dots span:nth-child(2) { background: var(--dot-yellow); }
+.window-card__dots span:nth-child(3) { background: var(--dot-green); }
+
+.window-card__title {
+    flex: 1;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted-text);
+    margin-right: 42px; /* balances the dots so title stays centered */
+    user-select: none;
+}
+
+.window-card__body {
+    padding: 1.5rem;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.window-card__body h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+}
+
+.window-card__body p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--muted-text);
+}
+
 /*-----media-----*/
 
 @media(max-width: 1280px){
+
+    .window-card{
+        max-width: 90%;
+    }
+
+
     #uppatch{
         height: 200px;
     }
@@ -744,6 +830,11 @@
 }
 
 @media(max-width: 700px){
+
+    .window-card{
+        max-width: 80%;
+    }
+
     #uppatch{
         height: 150px;
     }

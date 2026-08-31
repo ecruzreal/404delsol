@@ -6,9 +6,7 @@ import { Link } from "react-router-dom";
 function Contact() {
     return (
         <div className="contact-body">
-            <img id="contact-alien" src="/images/trans.webp" alt="" />
-            <img id="contact-bluestar" src="/images/trans.webp" alt="" />
-            <img id="contact-anteaters" src="/images/trans.webp" alt="" />
+            
             <div className="contact-general">
                 <h1 className="contact-header">GOT QUESTIONS? CONTACT US!</h1>
                 <div  className="contact-us">
