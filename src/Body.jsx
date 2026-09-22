@@ -35,23 +35,15 @@ function Body(){
         <div className="body-all">
             <div className="body-container">
                 
-                <div className="apps-closed">
-                        <img id="sunp" src={logo} alt="" />
-                        <span>under construction, mind the dust</span>
-                </div>
                 <div className="upcoming-container">
-                    
-                    <div class="window-card">
-                    <div class="window-card__titlebar">
-                        <div class="window-card__dots">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="window-card__title">404.txt</div>
-                    </div>
-                    <div class="window-card__body">
-                        <h1>Thanks for rocking with us <br /> 404 forever!</h1>
-                    </div>
-                    </div>
+
+                <h1 className="upcoming-title">UPCOMING:</h1>
+
+                <img className="flyer-img" src="images/halloween_flyer.png" alt="" />
+
+                <a className="tickets" href="https://posh.vip/e/404-del-sol-x-ugly-flower-presents-halloween-bash">CLICK HERE FOR TICKETS</a>
+
+
                     {/*
                     <div className="apply-now">
                         <Link className="apply-main-link" to={'/apply'}>APPLY NOW!</Link>
@@ -67,18 +59,10 @@ function Body(){
                 </div>
                 <h1 className="spotify-header">OUR STAGE, YOUR SOUNDTRACKS</h1>
                 <div className="spotify-container">
-                <div class="window-card">
-                    <div class="window-card__titlebar">
-                        <div class="window-card__dots">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="window-card__title">artists.txt</div>
+                    <div className="spotify-info">
+       
+                    <p>These are the bands that brought the house down, and now they're in your headphones. Hit play, and explore the talent who's performed at 404 Del Sol!</p>
                     </div>
-                    <div class="window-card__body">
-                        <h3>Featured Artists</h3>
-                        <p>These are the bands that brought the house down, and now they're in your headphones. Hit play, and explore the talent who's performed at 404 Del Sol!</p>
-                    </div>
-                </div>
                     <iframe className="spotify-playlist" src="https://open.spotify.com/embed/playlist/27c85JpJNg0jAAHE0XPwpF?utm_source=generator&theme=0&si=c241559c05324d13" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
