@@ -19,7 +19,7 @@ a{
 }
 
 a:hover {
-  color: rgb(94, 147, 114);
+  color: rgb(132, 31, 175);
 }
 
 body {
@@ -29,9 +29,10 @@ body {
   place-items: center;
   min-width: 320px;
   overflow-x: hidden;
-  background-image: url(/images/grid-me.png);
+  background-image: url('/images/404halloween.png');
   background-repeat: repeat;
-  background-color: #406136;
+  background-size: 100rem ;
+  background-color: #e84e10;
 }
 
 h1 {
@@ -55,6 +56,13 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+@media(max-width: 700px){
+  body{
+    background-size:50rem;
+  }
+}
+
+/*
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,3 +75,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
